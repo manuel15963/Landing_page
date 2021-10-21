@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    position: relative;
+}
+
+
+
+img{
+    width: 100%;
+    height: 900px;;
+}
+
+
+.title{
+    position: absolute;
+    top: 250px;
+    left: 10%;
+}
+
+.toolbar{
+    width: 35%;
+    position: absolute;
+    top: 35px;
+    left: 62%;
+
+}
+
+
+.toolbar1{
+    font-size: 20px;
+    padding-left:15%;
+}
+
+
+
+.contenedor{
+    justify-content: center;
+    padding-top: 10%;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    padding-bottom: 3%;
+}
+
+.subtitulos{
+    padding-top: 12%;
+}
+
+
+.imagen_inicio{
+    justify-content: center;
+    margin: auto 35%;
+    width: 33%;
+    height:50%;
+
+} 
+
+.tres{
+    text-align: center;
+    width: 90%;
+    height: 40%;
+}
+
+.parrafos{
+    margin-left: 15%;
+    width:70%;
+
+}
+
+
+#Nosotros{
+    padding-top:3%;
+    text-align: center;
+}
+
+p{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 40px;
+}
+#Categoria-pro{
+    padding-top:4%;
+    text-align: center;
+}
+
+
+.contenedor2{
+    justify-content: center;
+    padding-top: 10%;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding-bottom: 3%;
+
+}
+
+.imagenes2{
+    justify-content: center;
+    width: 50%;
+    height: 30%;
+}
+
+.imagenes3{
+    justify-content: center;
+    width: 50%;
+    height: 30%;
+}
+
+
+.contenedor-2{
+    margin-left: 10%;
+    text-align: center;
+    justify-content: center;
+    width:40%;
+    height: 100%;
+
+}
+
+.contenedor-3{
+    margin-right: 10%;
+    text-align: center;
+    justify-content: center;
+    width:40%;
+    height: 100%;
+
+} 
+.parrafo-contenido{
+    background: #E1DDDD;
+    padding-top:3%;
+    margin-left:25%;
+    width:50%;
+    font-size: 20px;
+}
+
+.titulo-categoria{
+    margin-left:25%;
+    width:50%;
+    background: #E1DDDD;
+}
+.max-class{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* Confiterisa seccion*/
+
+.confiteria{
+    justify-content: center;
+    padding-top: 5%;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding-bottom: 3%;
+}
+
+.confiteria-imagenes{
+    padding-left: 10%;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+
+/* Limpieza seccion*/
+
+.limpieza{
+    justify-content: center;
+    padding-top: 5%;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding-bottom: 3%;
+}
+
+.limpieza-imagenes{
+    padding-left: 10%;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+
+
+/* Vegetales seccion*/
+.vegetales{
+    justify-content: center;
+    padding-top: 5%;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding-bottom: 3%;
+}
+
+.vegetales-imagenes{
+    padding-left: 10%;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+
+
+
+/* carne seccion*/
+
+.carne{
+    justify-content: center;
+    padding-top: 5%;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding-bottom: 3%;
+}
+
+
+.carne-imagenes{
+    padding-left: 10%;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+
+#footer{
+    background:#514E4E;
+    padding:0% 15% ;
+    text-align: center;
+}
