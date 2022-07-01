@@ -102,10 +102,10 @@ ALTER TABLE COMPRA ADD CONSTRAINT COMPRA_VENDEDOR
 
 
     insert into CLIENTE (CODCLI, NOMCLI, APECLI, EMACLI,CELCLI,DIRCLI,ESTCLI) Values
-    ('CL01','Juana','Campos OrtÌz','juana.campos@gmail.com','987485152','Av. Miraflores','A'),
-    ('CL02','SofÌa','Barrios Salcedo','sofia.barrios@outlook.com','','Jr. Huallaga','A'),
-    ('CL03','Claudio','PÈrez Luna','claudio.perez@outlook.com','987485152','Av. Libertadores','A'),
-    ('CL04','Marcos','¡vila Manco','marcos.avila@yahoo.com','','Calle. Huallaga','A'),
+    ('CL01','Juana','Campos Ort√≠z','juana.campos@gmail.com','987485152','Av. Miraflores','A'),
+    ('CL02','Sof√≠a','Barrios Salcedo','sofia.barrios@outlook.com','','Jr. Huallaga','A'),
+    ('CL03','Claudio','P√©rez Luna','claudio.perez@outlook.com','987485152','Av. Libertadores','A'),
+    ('CL04','Marcos','√Åvila Manco','marcos.avila@yahoo.com','','Calle. Huallaga','A'),
     ('CL05','Anastasio','salomon Inti','anastasio.salomon@gmail.com','','Jr. San Martin','A');
 
         insert into VENDEDOR (CODVEND,NOMVEND,APEVEND,EMAVEND,CELVEND,DIRVEND,ESTVEND) Values
@@ -131,5 +131,28 @@ ALTER TABLE COMPRA ADD CONSTRAINT COMPRA_VENDEDOR
     ('PRO08','Lenovo IdeaPad 5i Intel Core 17 14"','3','3099','10','A'),
     ('PRO09','Laptop HP 15-dw1085la Intel Core i7 i3','3','1600','15','A'),
     ('PRO10','Galaxy A52 128GB','4','1200','25','A'),
-    ('PRO11','°Phone 11 64GB Morado','4','2600','30','A'),
+    ('PRO11','¬°Phone 11 64GB Morado','4','2600','30','A'),
     ('PRO12','Poco X3 GT 5G 256GB 8GB','4','1450','20','A');
+SELECT * FROM CLIENTE
+GO
+CREATE PROCEDURE spInserCliente
+(
+  @CODCLI char(6),
+  @NOMCLI nvarchar(60),
+  @APECLI nvarchar(60),
+  @EMACLI nvarchar(60),
+  @CELCLI nvarchar(60),
+  @DIRCLI nvarchar(60),
+  @ESTCLI nvarchar(60)
+  )
+ AS 
+ BEGIN 
+SET NOCOUNT ON 
+INSERT INTO  CLIENTE 
+(CODCLI,NOMCLI,APECLI,EMACLI,CELCLI,DIRCLI,ESTCLI)
+VALUES 
+(@CODCLI, @NOMCLI, @APECLI, @EMACLI, @CELCLI, @DIRCLI, @ESTCLI)
+SELECT * FROM CLIENTE
+WHERE CODCLI = @CODCLI
+END 
+GO
